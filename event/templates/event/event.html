@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}{% endblock %}
+{% block body %}
+<div id="home" class="banner-area">
+
+            <!-- Backgound Image -->
+            <div class="bg-image bg-parallax overlay">
+
+            </div>
+            <!-- /Backgound Image -->
+
+            <div class="home-wrapper">
+
+                <div class="col-md-10 col-md-offset-1 text-center">
+                    <div class="home-content">
+                          <h1 class="white-text"> Events </h1>
+
+                    </div>
+                </div>
+
+            </div>
+
+</div>
+<div class="container">
+
+    {% for event in all_event %}
+<center>
+    <div class="eventus">
+        <div class="descriptions">
+
+            <p><img src="{{ event.image.url }}" height="300px" width="300px"></p>
+            <center><h3>{{ event.title }}</h3></center>
+            <p>{{ event.description }}</p>
+
+        </div>
+    </div>
+
+     {% endfor %}
+    </center>
+</div>
+{% endblock %}

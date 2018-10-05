@@ -1,0 +1,497 @@
+/*  navbar */
+.navbar-custom{
+    padding-top:7px !important;
+    padding-bottom:7px !important;
+}
+.top-nav .navbar-custom{
+
+	margin: 0px 0px;
+	background-color: #FFF;
+}
+.contact-nav li i {
+	color:#f36700;
+}
+
+/* back ground image */
+
+.bg-image {
+
+
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-position:center;
+	background-size:cover;
+	z-index:-1;
+}
+
+.bg-image.bg-parallax {
+    background-image:url('http://wallpaperhd.online/upload/images/1525326708688/brasserie-restaurant-bon-restaurant-blind-date-restaurant-tablecloths-chair-1280x720.jpg');
+	background-attachment:fixed;
+}
+
+.bg-image.overlay:after {
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	opacity: 0.5;
+	background-color:#000;
+}
+
+.banner-area {
+	position:relative;
+	padding-bottom:40px;
+}
+
+.banner-area .home-wrapper {
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+#home {
+	height:100vh;
+}
+.home-content h1{
+
+    font-family:  'Allura';
+    color: white;
+    font-size: 10vw;
+    font-weight: 500;
+}
+.home-content h4{
+    font-family: cursive;
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+/* about */
+
+.container .section{
+    margin-bottom: 80px;
+}
+.container .about{
+    margin-top: 80px;
+
+}
+.container .about h4{
+    text-align: center;
+    color: red;
+
+}
+
+.container .about h5
+{
+    font-family: 'Pacifico';
+    text-align: center;
+
+    font-size: 25px;
+}
+
+.built {
+    font-family: 'Actor';
+}
+
+.paragraph{
+    font-family: cursive;
+    color: darkgray;
+}
+
+/* menu */
+
+
+#hom{
+
+	height:100vh;
+
+}
+
+
+.imj {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background-position:center;
+	background-size:cover;
+	z-index:-1;
+}
+.imj.overlay:after {
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	opacity: 0.5;
+	background-color:#000;
+}
+
+.banner-area .home-wrappe{
+
+
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	left: 0;
+	right: 0;
+}
+.affordable {
+
+    font-family: 'Angkor';
+    color: white;
+    font-size: 8vw;
+    text-align: center;
+}
+
+.menu{
+    margin-bottom: 50px;
+}
+
+.w{
+
+    display: block;
+    margin: 0 auto;
+    width: 1100px
+}
+
+.filter-list{
+
+    display: block;
+    width: 100%;
+    text-align: center;
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.filter-list li{
+
+
+    display: inline-block;
+    font-weight: bold;
+    margin-top: 40px;
+    width:auto;
+    padding: 6px 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+    color:black !important;
+
+}
+
+.filter-list li hover{
+    color: rgb(129, 24, 24) !important;
+}
+
+.filter-list li active{
+    font-weight: bold;
+    color: #000;
+}
+
+.portfolio{
+
+    display: block;
+    width: 100%;
+    padding: 0 12px;
+    margin-bottom: 0;
+	text-align: center;
+}
+
+.portfolio img {
+
+    width:207px;
+    height: 150px;
+}
+.portfolio li{
+
+    background-color: rgb(187, 0, 0);
+}
+
+.portfolio .item{
+
+	width: 30%;
+    display: inline-block;
+	color: #fff;
+	margin-bottom: 25px;
+	margin-right: 20px;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	width: 207px;
+
+}
+
+/* book a table */
+ .reserve-form{
+	background: rgba(21, 21, 21, 0.9);
+    margin: 50px 0px;
+	padding: 30px 2% 30px;
+
+}
+
+.booktable{
+    margin: 30px 50px;
+}
+
+.booktable h5{
+    text-align: center;
+    color: orange;
+    font-size: 1vw;
+}
+.booktable h2{
+    text-align: center;
+    color: white;
+
+    font-size: 4vw;
+    font-family: 'Allura';
+
+}
+
+.reserve-form label{
+    color: white;
+}
+
+::placeholder {
+    color: gray;
+    opacity: 1; /* Firefox */
+}
+
+.timing {
+	padding: 20px 8% 20px;
+	background: #151515;
+	margin-top: 150px;
+}
+
+.timing h2{
+    color: white;
+    text-align: center;
+    font-size: 2vw;
+    font-family: 'Allura';
+
+}
+.day {
+	display:inline-block;
+	font-weight:400;
+	color:#fff;
+}
+
+ .hours {
+	float: right;
+	font-size: 14px;
+	margin-top: 12px;
+	font-weight:400;
+	color:#f36500;
+}
+
+ .banner-area .order{
+
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	    -ms-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	left: 0px;
+	right: 0px;
+}
+
+
+
+.order-form {
+    margin: 50px 0px;
+	padding: 30px 2% 30px;
+	background: rgba(21, 21, 21, 0.9);
+}
+.order-form label{
+    color: white;
+}
+.orderbook {
+    text-align: center;
+    color: white;
+    font-family: 'Allura';
+    font-size: 15vw;
+}
+
+.bookorder h2{
+    text-align: center;
+    color: white;
+
+    font-size: 4vw;
+    font-family: 'Allura';
+
+}
+
+/*i {
+    position: absolute;
+    top: 18px;
+    right: 20px;
+    color: #93a5ab;
+}*/
+
+.reserve-form .form-group {
+
+
+    margin-right: 35px;
+    margin-left: 35px;
+
+}
+
+/*.reserve-form i {*/
+    /*!*position: absolute;*!*/
+    /*float: right;*/
+    /*padding: 25px 20px;*/
+
+    /*color: grey;*/
+/*}*/
+
+.reserve-form .input {
+    font-size: 16px;
+    height: 42px;
+    padding: 10px 25px;
+    color: grey;
+
+    /*border-radius: 25px;*/
+
+}
+
+.login input[type="email"],
+.login input[type="password"],
+.login input:focus {
+    background-color: rgba(40, 52, 67, 0.75);
+    border: 1px solid #4a525f;
+    color: #eee;
+    border-left: 4px solid #93a5ab;
+}
+
+.login input:focus {
+    border-left: 4px solid #ccd8da;
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    background-color: rgba(40, 52, 67, 0.75) !important;
+    background-image: none;
+    color: rgb(0, 0, 0);
+    border-color: #FAFFBD;
+}
+
+.login .checkbox label,
+.login .checkbox a {
+    color: #ddd;
+}
+
+.events{
+
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 400px;
+
+}
+
+.description h3{
+
+
+    font-family:'Allura' ;
+    color: cadetblue;
+    font-size: 30px;
+    font-weight: bold;
+}
+.description{
+    font-weight: bold;
+}
+
+/* footer */
+.footer{
+
+    background-color: #190710;
+}
+
+.block {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    /*color: white;*/
+    /*text-align: center;*/
+}
+.address-block li{
+    color: whitesmoke;
+}
+
+.footer-copyright
+{
+    text-align: center;
+}
+
+/* menu */
+.secTitle{
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.dishName{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price{
+       color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/*.nav-stacked{*/
+    /*font-size: 30px;*/
+
+/*}*/
+.nav-stacked li {
+    background-color: #190710;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+
+.eventus{
+    background-color: #EFFBF5;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 300px;
+
+}
+.descriptions h3{
+
+
+    font-family:'Allura' ;
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+.descriptions{
+    font-weight: bold;
+}
+
+.eventus .column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.eventus .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}

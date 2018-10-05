@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our Menu</title>
+</head>
+<body>
+<h1> this is our menu</h1>
+<ul>
+    {% for a in all_menu %}
+       <li> {{a.category_name}} </li>
+    {% endfor %}
+</ul>
+</body>
+</html>

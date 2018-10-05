@@ -1,0 +1,213 @@
+
+<html lang="en">
+<head>
+    {% block title %}
+    <title>TheTable Restaurant</title>
+    {% endblock %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Actor' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Abril Fatface' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
+    <style>
+        /*  navbar */
+.navbar-custom{
+    padding-top:7px !important;
+    padding-bottom:7px !important;
+}
+.top-nav .navbar-custom{
+
+	margin: 0px 0px;
+	background-color: #FFF;
+}
+.contact-nav li i {
+	color:#f36700;
+}
+
+/* back ground image */
+
+/*.bg-image {*/
+
+
+	/*position:absolute;*/
+	/*left:0;*/
+	/*right:0;*/
+	/*top:0;*/
+	/*bottom:0;*/
+	/*background-position:center;*/
+	/*background-size:cover;*/
+	/*z-index:-1;*/
+/*}*/
+
+/*.bg-image.bg-parallax {*/
+    /*background-image:url('http://wallpaperhd.online/upload/images/1525326708688/brasserie-restaurant-bon-restaurant-blind-date-restaurant-tablecloths-chair-1280x720.jpg');*/
+	/*background-attachment:fixed;*/
+/*}*/
+
+/*.bg-image.overlay:after {*/
+	/*content:"";*/
+	/*position:absolute;*/
+	/*left:0;*/
+	/*right:0;*/
+	/*top:0;*/
+	/*bottom:0;*/
+	/*opacity: 0.5;*/
+	/*background-color:#000;*/
+/*}*/
+
+/*.banner-area {*/
+	/*position:relative;*/
+	/*padding-bottom:40px;*/
+/*}*/
+
+/*.banner-area .home-wrapper {*/
+	/*position: absolute;*/
+	/*top: 50%;*/
+	/*-webkit-transform: translateY(-50%);*/
+	    /*-ms-transform: translateY(-50%);*/
+	        /*transform: translateY(-50%);*/
+	/*left: 0;*/
+	/*right: 0;*/
+/*}*/
+/*#home {*/
+	/*height:100vh;*/
+/*}*/
+/*.home-content h1{*/
+
+    /*font-family:  'Allura';*/
+    /*color: white;*/
+    /*font-size: 10vw;*/
+    /*font-weight: 500;*/
+/*}*/
+/*.home-content h4{*/
+    /*font-family: cursive;*/
+    /*color: white;*/
+    /*font-size: 30px;*/
+    /*font-weight: 400;*/
+/*}*/
+    </style>
+</head>
+
+<body>
+
+         <div class="top-nav">
+            <nav class="navbar navbar-default  navbar-fixed-top navbar-custom navbar">
+              <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                  <a class="navbar-brand" href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/11/The_Table_%28restaurant%29_logo.png/1200px-The_Table_%28restaurant%29_logo.png" width="80px" height="35px"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="{% url 'home:home' %}">Home</a></li>
+                        <li><a href="{% url 'home:home' %}">About</a></li>
+                        <li><a href="{% url 'menu:menu' %}">Menu</a></li>
+                        <li><a href="#order">Order</a></li>
+                        <li><a href="{% url 'booktable:booktable' %}">Reservation</a></li>
+                        <!--<li><a href="#gallery">Gallery</a></li>-->
+                        <li><a href="{% url 'event:event' %}">Events</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class=" contact-nav nav navbar-nav navbar-right">
+                        <li><a href="#"><i class="fa fa-phone"></i> 045-548-14-97</a></li>
+                        <li><a href="#"><i class="fa fa-map-marker"></i> 3685 Granville Lane</a></li>
+                    </ul>
+                </div>
+              </div>
+            </nav>
+        </div>
+
+        <!-- background image -->
+        <!--<div id="home" class="banner-area">-->
+
+            <!--&lt;!&ndash; Backgound Image &ndash;&gt;-->
+            <!--<div class="bg-image bg-parallax overlay"></div>-->
+            <!--&lt;!&ndash; /Backgound Image &ndash;&gt;-->
+
+            <!--<div class="home-wrapper">-->
+
+                <!--<div class="col-md-10 col-md-offset-1 text-center">-->
+                    <!--<div class="home-content">-->
+                          <!--<h1 class="white-text">Restaurant</h1>-->
+                          <!--<h4 class="white-text lead">"Best In The City"</h4>-->
+                    <!--</div>-->
+                <!--</div>-->
+
+            <!--</div>-->
+
+        <!--</div>-->
+
+{% block body %}
+{% endblock %}
+
+<br>
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="block">
+
+                    <ul class="address-block">
+                        <li> Home </li>
+                        <li> about us</li>
+                        <li>menus</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="block">
+
+                    <ul class="address-block">
+                        <li>Order</li>
+                        <li>Reservation</li>
+                        <li>Events</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-sm-4"></div>
+            <!--<div class="col-sm-5">-->
+                <div class="block">
+                    <!--<h2>Stop By For A visit</h2><br>-->
+                    <ul class="address-block">
+                        <li>
+                            <i class="fa fa-map-marker"></i>1st Floor Near Gandhinagar Nagrik Bank GH-4II, Sector-16, Gandhinagar
+                        </li>
+                        <li>
+                            <i class="fa fa-envelope-o"></i>thetablerestaurant123@gmail.com
+                        </li>
+                        <li>
+                            <i class="fa fa-phone"></i>079-23223440,&nbsp;+919662663440
+                        </li>
+                    </ul>
+                </div>
+            <!--</div>-->
+
+        </div>
+        <!--<div class="row">-->
+            <!--<div class="col-md-12">-->
+                <!--<div class="footer-copyright">&copy; 2018 <a-->
+                        <!--href="http://www.github.com/Akriti3011/Electrolocus">TheTable Restaurant </a></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    </div>
+</div>
+
+
+</body>
+</html>

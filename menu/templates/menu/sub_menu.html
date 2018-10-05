@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block title %}{% endblock %}
+{% block body %}
+
+<div id="home" class="banner-area">
+
+            <!-- Backgound Image -->
+    <div class="bg-image bg-parallax overlay">
+
+    </div>
+            <!-- /Backgound Image -->
+
+    <div class="home-wrapper">
+
+        <div class="col-md-10 col-md-offset-1 text-center">
+            <div class="home-content">
+                  <h1 class="white-text">Our menu </h1>
+                  <!--<h4 class="white-text lead">"Best In The City"</h4>-->
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+<!--<div class="container">-->
+    <!--<ul>-->
+         <!--{% for menu in all_menu%}-->
+
+            <!--<h1>{{menu.category_name}}</h1>-->
+            <!--{% for submenu in all_sub_menu%}-->
+                <!--{% if submenu.menu == menu%}-->
+                    <!--<h4> {{submenu.dish_name}}-&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;{{submenu.price}}</h4>-->
+                <!--{% endif %}-->
+            <!--{% endfor %}-->
+         <!--{% endfor %}-->
+
+    <!--</ul>-->
+<!--</div>-->
+
+<section id="sub-menu" class="section">
+  <div class="container">
+    <div  class="row " style="margin-bottom: 70px;">
+      <h2 style="margin: 50px ;">OUR MENU</h2>
+      <hr>
+      <div class="col-md-4">
+        <ul class="nav nav-pills nav-stacked" style="margin-top: 30px;">
+          {% for menu in all_menu %}
+          <li><a data-toggle="pill"
+                 href="#{{ menu.id }}"
+                 style="text-transform: capitalize ">{{ menu.category_name}}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="col-md-8">
+        <div class="sub-menu-card"
+             style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuwWlIFyn_dpmRk7zNRFk5wpXAMlpN_JOiuWBhbKzPdYQ5Dce1JA');">
+          <div class="tab-content">
+            {% for menu in all_menu %}
+            <div id="{{ menu.id }}"
+                 class="tab-pane fade in {% if menu.id == 1 %}active{% else %} {% endif %}">
+              <div class="table-flexible">
+                <table class="table borderless">
+                  <tbody>
+                  <tr>
+                    <td colspan="3" class="text-center">
+                      <span class="secTitle"
+                            style="text-transform: capitalize">{{ menu.category_name }} </span>
+                    </td>
+                  </tr>
+                  {% for submenu in all_sub_menu %}
+                  {% if submenu.menu == menu %}
+                  <tr>
+                    <td>
+                      <div class="dishName"
+                            style="text-transform: capitalize">{{ submenu.dish_name }}</div>
+                    </td>
+                    <td class="price">&#8377;{{ submenu.price }}</td>
+                  </tr>
+                  {% endif %}
+                  {% endfor %}
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!--{#{% for sub_menu in all_sub_menu %}#}-->
+<!--{#<h2>{{ sub_menu.dish_name }}</h2>#}-->
+<!--{#<p>{{ sub_menu.price }}</p>#}-->
+<!--{#{% endfor %}#}-->
+
+{% endblock %}
