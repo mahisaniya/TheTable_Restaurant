@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('dish_name', models.CharField(max_length=100)),
                 ('price', models.IntegerField()),
-                ('menu', models.ForeignKey(to='menu.Menu')),
+                ('menu', models.ForeignKey(to='menu.Menu', on_delete=models.CASCADE)),
             ],
         ),
     ]

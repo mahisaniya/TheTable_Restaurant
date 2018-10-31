@@ -101,14 +101,14 @@
 
         <div class="container">
 
-            <div class="section">
+            <div class="section" id=about-us>
                 <div class="row">
-                     <a name="aboutus">
+
                         <div class="about">
                             <h4>  About Us</h4>
                             <h5> TheTable Restaurant</h5><br><br><br>
                         </div>
-                     </a>
+
                         <div class="col-md-5">
                             <h4 class="built">
                                 Welcome to TheTable Restaurant. Since 1988, Offering Traditional Dishes of the highest quality.
@@ -144,8 +144,8 @@
 
         </div>
         <!-- menu -->
-        <a name="menus">
-            <div class="container">
+
+           <!-- <div class="container">
                 <div class="menu">
                    <div class="row">
                        <div class="w">
@@ -160,29 +160,29 @@
                                     <ul class="portfolio">
 
                                         <li class="item desert"><img src='{% static "menu_img/desert3.jpg" %}' alt="Food" >
-                                            <h2 class="white">100rs</h2>
+                                            <h2 class="white">&#x20B9; 100</h2>
                                         </li>
 
                                         <li class="item desert"><img src='{% static "menu_img/desert5.jpeg" %}'  alt="Food" >
-                                            <h2 class="white">150rs</h2>
+                                            <h2 class="white">&#x20B9; 150</h2>
                                         </li>
                                         <li class="item lunch"><img src='{% static "menu_img/lunch1.jpeg" %}'  alt="Food" >
-                                            <h2 class="white">150rs</h2>
+                                            <h2 class="white">&#x20B9; 150</h2>
                                         </li>
                                         <li class="item lunch"><img src='{% static "menu_img/lunch2.jpeg" %}'  alt="Food" >
-                                            <h2 class="white">200rs</h2>
+                                            <h2 class="white">&#x20B9; 200</h2>
                                         </li>
                                         <li class="item lunch"><img src='{% static "menu_img/lunch3.jpeg" %}'  alt="Food" >
-                                            <h2 class="white">250rs</h2>
+                                            <h2 class="white">&#x20B9; 250</h2>
                                         </li>
                                         <li class="item dinner"><img src='{% static "menu_img/dinner.jpeg" %}' alt="Food" >
-                                            <h2 class="white">400rs</h2>
+                                            <h2 class="white">&#x20B9; 400</h2>
                                         </li>
                                         <li class="item dinnert"><img src='{% static "menu_img/dinner2.jpeg" %}'  alt="Food" >
-                                            <h2 class="white">350rs</h2>
+                                            <h2 class="white">&#x20B9; 350</h2>
                                         </li>
                                         <li class="item dinner"><img src='{% static "menu_img/dinner3.jpeg" %}'  alt="Food" >
-                                            <h2 class="white">200rs</h2>
+                                            <h2 class="white">&#x20B9; 200</h2>
                                         </li>
 
                                     </ul>
@@ -190,36 +190,36 @@
                                 <div id="desert" class="tab-pane fade">
                                     <ul class="portfolio">
                                         <li class="item desert"><img src='{% static "menu_img/desert3.jpg" %}' alt="Food" >
-                                            <h2 class="white">100rs</h2>
+                                            <h2 class="white">&#x20B9; 100</h2>
                                         </li>
                                         <li class="item desert"><img src='{% static "menu_img/desert5.jpeg" %}' alt="Food" >
-                                            <h2 class="white">150rs</h2>
+                                            <h2 class="white">&#x20B9; 150</h2>
                                         </li>
                                     </ul>
                                 </div>
                                 <div id="lunch" class="tab-pane fade">
                                     <ul class="portfolio">
                                         <li class="item lunch"><img src='{% static "menu_img/lunch1.jpeg" %}' alt="Food" >
-                                            <h2 class="white">150rs</h2>
+                                            <h2 class="white">&#x20B9; 150</h2>
                                         </li>
                                         <li class="item lunch"><img src='{% static "menu_img/lunch2.jpeg" %}' alt="Food" >
-                                            <h2 class="white">200rs</h2>
+                                            <h2 class="white">&#x20B9; 200</h2>
                                         </li>
                                         <li class="item lunch"><img src='{% static "menu_img/lunch3.jpeg" %}'  alt="Food" >
-                                            <h2 class="white">250rs</h2>
+                                            <h2 class="white">&#x20B9; 250</h2>
                                         </li>
                                     </ul>
                                </div>
                                <div id="dinner" class="tab-pane fade">
                                     <ul class="portfolio">
                                         <li class="item dinner"><img src='{% static "menu_img/dinner.jpeg" %}' alt="Food" >
-                                            <h2 class="white">400rs</h2>
+                                            <h2 class="white">&#x20B9; 400</h2>
                                         </li>
                                         <li class="item dinnert"><img src='{% static "menu_img/dinner2.jpeg" %}'  alt="Food" >
-                                            <h2 class="white">350rs</h2>
+                                            <h2 class="white">&#x20B9; 350</h2>
                                         </li>
                                         <li class="item dinner"><img src='{% static "menu_img/dinner3.jpeg" %}' alt="Food" >
-                                            <h2 class="white">200rs</h2>
+                                            <h2 class="white">&#x20B9; 200</h2>
 
                                         </li>
                                     </ul>
@@ -232,8 +232,159 @@
                    </center>
                   </div>
               </div>
-         </div>
-        </a>
+         </div> -->
+
+      <div class="container" >
+            <div class="row" >
+              <ul class="filter-list">
+                  <li style="font-size: 2vw;"> <a data-toggle="tab"  href="#all">All</a></li>
+                  <li style="font-size: 2vw;"><a data-toggle="tab" href="#lunch"> Lunch</a></li>
+                  <li style="font-size: 2vw;"><a data-toggle="tab" href="#dinner"> Dinner</a></li>
+                  <li style="font-size: 2vw;"> <a data-toggle="tab" href="#desert">Dessert</a></li>
+               </ul>
+            </div>
+            <div class="tab-content">
+                <div id="all" class="tab-pane fade in active">
+                    <div class="row" style=" margin-bottom:50px;">
+                        <div class="col-md-3" style=" margin-top:50px;">
+                            <div class="menuimage all" style="background-color: red;" >
+                                <img src='{% static "menu_img/desert3.jpg" %}' alt="Food" style="width: 100%; height:200px" >
+                                <h2 class="white"  style="text-align:center;">&#x20B9; 150</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style=" margin-top:50px;">
+                            <div class="menuimage all " style="background-color: red;" >
+                                <img src='{% static "menu_img/desert5.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                                <h2 class="white"  style="text-align:center;">&#x20B9; 100</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="margin-top:50px;">
+                            <div class="menuimage all" style="background-color: red;" >
+                                <img src='{% static "menu_img/lunch1.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                                <h2 class="white"  style="text-align:center;">&#x20B9; 100</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style=" margin-top:50px;">
+                            <div class="menuimage all" style="background-color: red;" >
+                                <img src='{% static "menu_img/lunch2.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                                <h2 class="white"  style="text-align:center;">&#x20B9; 200</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style=" margin-top:50px;">
+                            <div class="menuimage all" style="background-color: red;" >
+                                <img src='{% static "menu_img/lunch3.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                                <h2 class="white"  style="text-align:center;">&#x20B9; 300</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style=" margin-top:50px;">
+                            <div class="menuimage all" style="background-color: red;" >
+                                <img src='{% static "menu_img/dinner.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                                <h2 class="white"  style="text-align:center;">&#x20B9; 300</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style=" margin-top:50px;">
+                            <div class="menuimage all" style="background-color: red;" >
+                                <img src='{% static "menu_img/dinner2.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                                <h2 class="white"  style="text-align:center;">&#x20B9; 200</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-3" style=" margin-top:50px;">
+                            <div class="menuimage all" style="background-color: red;" >
+                                <img src='{% static "menu_img/dinner3.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                                <h2 class="white"  style="text-align:center;">&#x20B9; 100</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="lunch" class="tab-pane fade">
+                   <div class="row" style=" margin-bottom:50px;">
+                      <div class="col-md-3" style=" margin-top:50px;">
+                          <div class="menuimage lunch" style="background-color: red;" >
+                              <img src='{% static "menu_img/lunch1.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                              <h2 class="white"  style="text-align:center;">&#x20B9; 100</h2>
+                          </div>
+                      </div>
+                      <div class="col-md-3" style=" margin-top:50px;">
+                          <div class="menuimage lunch" style="background-color: red;" >
+                              <img src='{% static "menu_img/lunch2.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                              <h2 class="white"  style="text-align:center;">&#x20B9; 200</h2>
+                          </div>
+                      </div>
+                      <div class="col-md-3" style=" margin-top:50px;">
+                          <div class="menuimage lunch" style="background-color: red;" >
+                              <img src='{% static "menu_img/lunch3.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                              <h2 class="white"  style="text-align:center;">&#x20B9; 300</h2>
+                          </div>
+                      </div>
+                      <div class="col-md-3" style=" margin-top:50px;">
+                          <div class="menuimage dinner" style="background-color: red;" >
+                              <img src='{% static "menu_img/dinner2.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                              <h2 class="white"  style="text-align:center;">&#x20B9; 200</h2>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+                <div id="desert" class="tab-pane fade">
+                   <div class="row" style=" margin-bottom:50px;">
+                      <div class="col-md-3" style=" margin-top:50px;">
+                          <div class="menuimage desert" style="background-color: red;" >
+                              <img src='{% static "menu_img/desert3.jpg" %}' alt="Food" style="width: 100%; height:200px" >
+                              <h2 class="white"  style="text-align:center;">&#x20B9; 150</h2>
+                          </div>
+                      </div>
+                      <div class="col-md-3" style=" margin-top:50px;">
+                          <div class="menuimage desert " style="background-color: red;" >
+                              <img src='{% static "menu_img/desert5.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                              <h2 class="white"  style="text-align:center;">&#x20B9; 100</h2>
+                          </div>
+                      </div>
+                      <div class="col-md-3" style=" margin-top:50px;">
+                          <div class="menuimage desert " style="background-color: red;" >
+                              <img src='{% static "menu_img/desert7.jpg" %}' alt="Food" style="width: 100%; height:200px" >
+                              <h2 class="white"  style="text-align:center;">&#x20B9; 150</h2>
+                          </div>
+                      </div>
+                      <div class="col-md-3" style="margin-top:50px;">
+                          <div class="menuimage desert " style="background-color: red;" >
+                              <img src='{% static "menu_img/icecream.jpg" %}' alt="Food" style="width: 100%; height:200px" >
+                              <h2 class="white"  style="text-align:center;">&#x20B9; 200</h2>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div id="dinner" class="tab-pane fade">
+                  <div class="row" style=" margin-bottom:50px;">
+                    <div class="col-md-3" style=" margin-top:50px;">
+                        <div class="menuimage dinner" style="background-color: red;" >
+                            <img src='{% static "menu_img/dinner.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                            <h2 class="white"  style="text-align:center;">&#x20B9; 300</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style=" margin-top:50px;">
+                        <div class="menuimage dinner" style="background-color: red;" >
+                            <img src='{% static "menu_img/dinner2.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                            <h2 class="white"  style="text-align:center;">&#x20B9; 200</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style=" margin-top:50px;">
+                        <div class="menuimage dinner" style="background-color: red;" >
+                            <img src='{% static "menu_img/dinner3.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                            <h2 class="white"  style="text-align:center;">&#x20B9; 100</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-3" style=" margin-top:50px;">
+                        <div class="menuimage lunch" style="background-color: red;" >
+                            <img src='{% static "menu_img/lunch3.jpeg" %}' alt="Food" style="width: 100%; height:200px" >
+                            <h2 class="white"  style="text-align:center;">&#x20B9; 300</h2>
+                        </div>
+                    </div>
+                  </div>
+              </div>
+          </div>
+          <center>
+              <a href="{% url 'menu:menu' %}"><h1 style="font-size: 3vw;"> More View</h1></a>
+          </center>
+      </div>
     <!-- 3rd background image -->
     <div id="hom" class="banner-area">
         <div class=" imj overlay" style="
@@ -250,29 +401,28 @@
             <div>
                 <h1 class="affordable"> Events </h1>
             </div>
-
-
         </div>
-
     </div>
  <div class="container">
-     <center>
-         <div class="events">
-            <img src="http://i2.wp.com/glamourmantra.com/wp-content/uploads/2017/10/Interior-shots-by-Royal-China44-New-Delhi-4.jpg?fit=990%2C667" width="400px" height="400px">
-            <div class="description">
-                 <h3>Diwali Celebration !</h3>
-                <div class="summary">
-                    Ram! The light of lights, the self-luminous inner light of the Self is ever shining steadily in the chamber of your heart. Sit quietly. Close your eyes. Fix the mind on this supreme light and enjoy the real Deepavali, by attaining illumination of the soul.
+     <div class="row">
+          <div class="col-md-4">
+          </div>
+          <div class="col-md-4">
+             <div class="events">
+                <img src="http://i2.wp.com/glamourmantra.com/wp-content/uploads/2017/10/Interior-shots-by-Royal-China44-New-Delhi-4.jpg?fit=990%2C667" style="width: 100%;">
+                <div class="description">
+                     <h3>Diwali Celebration !</h3>
+                    <div class="summary">
+                        Ram! The light of lights, the self-luminous inner light of the Self is ever shining steadily in the chamber of your heart. Sit quietly. Close your eyes. Fix the mind on this supreme light and enjoy the real Deepavali, by attaining illumination of the soul.
+                    </div>
+                    <center>
+                        <a href="{% url 'event:event' %}"><h2>See More</h2></a>
+                    </center>
                 </div>
-
-                <a href="{% url 'event:event' %}"><h2>See More</h2></a>
+             </div>
+             <div class="col-md-4">
             </div>
-         </div>
-     </center>
-
-
+      </div>
  </div>
 
 {% endblock %}
-
-

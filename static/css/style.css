@@ -184,7 +184,8 @@
     margin-top: 40px;
     width:auto;
     padding: 6px 10px;
-    font-size: 1.2em;
+    /* font-size: 5vw; */
+
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     color:black !important;
@@ -396,7 +397,7 @@ select:-webkit-autofill {
 
     margin-top: 70px;
     margin-bottom: 70px;
-    width: 400px;
+    /* width: 400px; */
 
 }
 
@@ -405,11 +406,12 @@ select:-webkit-autofill {
 
     font-family:'Allura' ;
     color: cadetblue;
-    font-size: 30px;
+    font-size: 3vw;
     font-weight: bold;
 }
 .description{
     font-weight: bold;
+    font-size: 10px;
 }
 
 /* footer */
@@ -452,10 +454,6 @@ select:-webkit-autofill {
     font-weight: bold;
 }
 
-/*.nav-stacked{*/
-    /*font-size: 30px;*/
-
-/*}*/
 .nav-stacked li {
     background-color: #190710;
     font-size: 30px;
@@ -463,35 +461,23 @@ select:-webkit-autofill {
 
 }
 
-
-.eventus{
+/* eventapp */
+ /* .eventus{
     background-color: #EFFBF5;
     margin-top: 70px;
     margin-bottom: 70px;
-    width: 300px;
+    border: 3px solid red;
+} */
 
-}
 .descriptions h3{
-
-
     font-family:'Allura' ;
     color: black;
-    font-size: 30px;
-    font-weight: bold;
-}
-.descriptions{
-    font-weight: bold;
-}
 
-.eventus .column {
-    float: left;
-    width: 33.33%;
-    padding: 5px;
+    font-weight: bold;
+    font-size: 3vw;
 }
+.descriptions p{
 
-/* Clearfix (clear floats) */
-.eventus .row::after {
-    content: "";
-    clear: both;
-    display: table;
+    font-weight: bold;
+    font-size: 10px;
 }

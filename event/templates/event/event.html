@@ -22,21 +22,21 @@
             </div>
 
 </div>
-<div class="container">
-
-    {% for event in all_event %}
-<center>
-    <div class="eventus">
-        <div class="descriptions">
-
-            <p><img src="{{ event.image.url }}" height="300px" width="300px"></p>
-            <center><h3>{{ event.title }}</h3></center>
-            <p>{{ event.description }}</p>
-
+<div class="container"  >
+     <!-- <div class="eventuswqdd" style="  border: 3px solid red; "> -->
+          <div class="row " >
+           {% for event in all_event %}
+              <div class="col-md-4" style="  margin-top: 70px;  ">
+                    <div class="card" >
+                          <img class="card-img-top" src="{{ event.image.url }}" alt="Card image cap"  height="300px" width=100%>
+                          <div class="card-body descriptions">
+                            <h3 class="card-title">{{ event.title }}</h3>
+                            <p class="card-text">{{ event.description }}</p>
+                          </div>
+                    </div>
+              </div>
+          {% endfor %}
         </div>
-    </div>
-
-     {% endfor %}
-    </center>
+    <!-- </div> -->
 </div>
 {% endblock %}

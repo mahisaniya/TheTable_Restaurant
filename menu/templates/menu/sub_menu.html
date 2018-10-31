@@ -49,7 +49,7 @@
           {% for menu in all_menu %}
           <li><a data-toggle="pill"
                  href="#{{ menu.id }}"
-                 style="text-transform: capitalize ">{{ menu.category_name}}</a>
+                 style="text-transform: capitalize; ">{{ menu.category_name}}</a>
           </li>
           {% endfor %}
         </ul>
@@ -76,7 +76,7 @@
                   <tr>
                     <td>
                       <div class="dishName"
-                            style="text-transform: capitalize">{{ submenu.dish_name }}</div>
+                            style="text-transform: capitalize; ">{{ submenu.dish_name }}</div>
                     </td>
                     <td class="price">&#8377;{{ submenu.price }}</td>
                   </tr>
