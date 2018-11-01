@@ -1,4 +1,4 @@
-/*  navbar */
+/*  header navbar */
 .navbar-custom{
     padding-top:7px !important;
     padding-bottom:7px !important;
@@ -11,12 +11,11 @@
 .contact-nav li i {
 	color:#f36700;
 }
+/* header navbar */
 
-/* back ground image */
 
+/* back ground image1 */
 .bg-image {
-
-
 	position:absolute;
 	left:0;
 	right:0;
@@ -73,9 +72,10 @@
     font-size: 30px;
     font-weight: 400;
 }
+/* background image 1 */
+
 
 /* about */
-
 .container .section{
     margin-bottom: 80px;
 }
@@ -105,17 +105,13 @@
     font-family: cursive;
     color: darkgray;
 }
+/* about us */
+
 
 /* menu */
-
-
 #hom{
-
 	height:100vh;
-
 }
-
-
 .imj {
 	position:absolute;
 	left:0;
@@ -136,10 +132,7 @@
 	opacity: 0.5;
 	background-color:#000;
 }
-
 .banner-area .home-wrappe{
-
-
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -149,79 +142,58 @@
 	right: 0;
 }
 .affordable {
-
     font-family: 'Angkor';
     color: white;
     font-size: 8vw;
     text-align: center;
 }
-
 .menu{
     margin-bottom: 50px;
 }
-
 .w{
-
     display: block;
     margin: 0 auto;
     width: 1100px
 }
-
 .filter-list{
-
     display: block;
     width: 100%;
     text-align: center;
-	text-align: center;
-	margin-bottom: 25px;
+	  text-align: center;
+  	margin-bottom: 25px;
 }
-
 .filter-list li{
-
-
     display: inline-block;
     font-weight: bold;
     margin-top: 40px;
     width:auto;
     padding: 6px 10px;
-    /* font-size: 5vw; */
-
     cursor: pointer;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     color:black !important;
-
 }
-
 .filter-list li hover{
     color: rgb(129, 24, 24) !important;
 }
-
 .filter-list li active{
     font-weight: bold;
     color: #000;
 }
-
 .portfolio{
-
     display: block;
     width: 100%;
     padding: 0 12px;
     margin-bottom: 0;
 	text-align: center;
 }
-
 .portfolio img {
-
     width:207px;
     height: 150px;
 }
 .portfolio li{
-
     background-color: rgb(187, 0, 0);
 }
-
 .portfolio .item{
-
 	width: 30%;
     display: inline-block;
 	color: #fff;
@@ -231,21 +203,19 @@
 	font-size: 30px;
 	text-align: center;
 	width: 207px;
-
 }
+/* menu */
+
 
 /* book a table */
  .reserve-form{
 	background: rgba(21, 21, 21, 0.9);
     margin: 50px 0px;
 	padding: 30px 2% 30px;
-
 }
-
 .booktable{
     margin: 30px 50px;
 }
-
 .booktable h5{
     text-align: center;
     color: orange;
@@ -254,12 +224,9 @@
 .booktable h2{
     text-align: center;
     color: white;
-
     font-size: 4vw;
     font-family: 'Allura';
-
 }
-
 .reserve-form label{
     color: white;
 }
@@ -268,26 +235,22 @@
     color: gray;
     opacity: 1; /* Firefox */
 }
-
 .timing {
 	padding: 20px 8% 20px;
 	background: #151515;
 	margin-top: 150px;
 }
-
 .timing h2{
     color: white;
     text-align: center;
     font-size: 2vw;
     font-family: 'Allura';
-
 }
 .day {
 	display:inline-block;
 	font-weight:400;
 	color:#fff;
 }
-
  .hours {
 	float: right;
 	font-size: 14px;
@@ -295,9 +258,7 @@
 	font-weight:400;
 	color:#f36500;
 }
-
  .banner-area .order{
-
 	position: absolute;
 	top: 50%;
 	-webkit-transform: translateY(-50%);
@@ -306,9 +267,6 @@
 	left: 0px;
 	right: 0px;
 }
-
-
-
 .order-form {
     margin: 50px 0px;
 	padding: 30px 2% 30px;
@@ -332,40 +290,17 @@
     font-family: 'Allura';
 
 }
-
-/*i {
-    position: absolute;
-    top: 18px;
-    right: 20px;
-    color: #93a5ab;
-}*/
-
 .reserve-form .form-group {
-
-
     margin-right: 35px;
     margin-left: 35px;
 
 }
-
-/*.reserve-form i {*/
-    /*!*position: absolute;*!*/
-    /*float: right;*/
-    /*padding: 25px 20px;*/
-
-    /*color: grey;*/
-/*}*/
-
 .reserve-form .input {
     font-size: 16px;
     height: 42px;
     padding: 10px 25px;
     color: grey;
-
-    /*border-radius: 25px;*/
-
 }
-
 .login input[type="email"],
 .login input[type="password"],
 .login input:focus {
@@ -374,11 +309,9 @@
     color: #eee;
     border-left: 4px solid #93a5ab;
 }
-
 .login input:focus {
     border-left: 4px solid #ccd8da;
 }
-
 input:-webkit-autofill,
 textarea:-webkit-autofill,
 select:-webkit-autofill {
@@ -387,23 +320,21 @@ select:-webkit-autofill {
     color: rgb(0, 0, 0);
     border-color: #FAFFBD;
 }
-
 .login .checkbox label,
 .login .checkbox a {
     color: #ddd;
 }
 
-.events{
+/* booktable */
 
+
+/* events */
+.events{
     margin-top: 70px;
     margin-bottom: 70px;
     /* width: 400px; */
-
 }
-
 .description h3{
-
-
     font-family:'Allura' ;
     color: cadetblue;
     font-size: 3vw;
@@ -413,41 +344,17 @@ select:-webkit-autofill {
     font-weight: bold;
     font-size: 10px;
 }
-
-/* footer */
-.footer{
-
-    background-color: #190710;
-}
-
-.block {
-    margin-top: 70px;
-    margin-bottom: 70px;
-    /*color: white;*/
-    /*text-align: center;*/
-}
-.address-block li{
-    color: whitesmoke;
-}
-
-.footer-copyright
-{
-    text-align: center;
-}
-
-/* menu */
+/* menupage */
 .secTitle{
     color: white;
     font-size: 30px;
     font-weight: bold;
 }
-
 .dishName{
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
-
 .price{
        color: white;
     font-size: 20px;
@@ -460,15 +367,10 @@ select:-webkit-autofill {
     text-align: center;
 
 }
+/* menupage */
 
-/* eventapp */
- /* .eventus{
-    background-color: #EFFBF5;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    border: 3px solid red;
-} */
 
+/* eventpage */
 .descriptions h3{
     font-family:'Allura' ;
     color: black;
@@ -481,3 +383,4 @@ select:-webkit-autofill {
     font-weight: bold;
     font-size: 10px;
 }
+/* eventpage */
