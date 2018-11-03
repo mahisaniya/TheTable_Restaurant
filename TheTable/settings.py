@@ -27,7 +27,11 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = "youremail"
+EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_PORT = 587
 # Application definition
 
 INSTALLED_APPS = (
@@ -41,6 +45,7 @@ INSTALLED_APPS = (
     'booktable.apps.BooktableConfig',
     'event.apps.EventConfig',
     'home.apps.HomeConfig',
+    'book_a_table.apps.BookATableConfig',
     # 'order.apps.OrderConfig',
 
 
