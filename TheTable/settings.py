@@ -29,8 +29,8 @@ ALLOWED_HOSTS = []
 
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_HOST_USER = "youremail"
-EMAIL_HOST_PASSWORD = 'yourpassword'
+EMAIL_HOST_USER = "mahisaniyapayal@gmail.com"
+EMAIL_HOST_PASSWORD = 'payal$kamla'
 EMAIL_PORT = 587
 # Application definition
 
@@ -50,6 +50,9 @@ INSTALLED_APPS = (
 
 
 )
+
+PHONENUMBER_DEFAULT_REGION = 'IN'
+TIME_ZONE = 'Asia/Calcutta'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -92,7 +95,20 @@ DATABASES = {
     }
 }
 
-
+AUTH_PASSWORD_VALIDATORS = [
+    {
+        'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
+    },
+    {
+        'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
+    },
+]
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
