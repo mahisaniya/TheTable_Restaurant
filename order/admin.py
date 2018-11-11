@@ -1,8 +1,17 @@
-# -*- coding: utf-8 -*-
-from __future__ import unicode_literals
-
 from django.contrib import admin
 
-# Register your models here.
+from order.models import Order, Dish, PickUp
 
-admin.site.register()
+
+class OrderAdmin(admin.ModelAdmin):
+    list_display = ('user', 'phone_number', 'user_email', 'user_address',
+                    'user_message')
+
+
+class DishAdmin(admin.ModelAdmin):
+    list_display = ('order', 'name')
+
+
+admin.site.register(Order, OrderAdmin)
+admin.site.register(Dish)
+admin.site.register(PickUp)

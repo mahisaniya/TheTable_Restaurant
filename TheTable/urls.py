@@ -22,7 +22,7 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^menu' ,include('menu.urls')),
     url(r'^booktable',include('booktable.urls')),
-    # url(r'^order/',include('order.urls')),
+    url(r'^order/',include('order.urls')),
     url(r'^home/',include('home.urls')),
     url(r'^event/', include('event.urls')),
 ]
