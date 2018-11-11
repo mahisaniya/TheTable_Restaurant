@@ -45,7 +45,8 @@ INSTALLED_APPS = (
     'booktable.apps.BooktableConfig',
     'event.apps.EventConfig',
     'home.apps.HomeConfig',
-    'order.apps.OrderConfig',
+    'book_a_table.apps.BookATableConfig',
+    # 'order.apps.OrderConfig',
 
 
 )

@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     {% load staticfiles %}
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -20,7 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Angkor' rel='stylesheet'>
 
     <style>
-        /*  navbar */
+  /*  header navbar */
         .navbar-custom{
             padding-top:7px !important;
             padding-bottom:7px !important;
@@ -30,9 +32,62 @@
         	margin: 0px 0px;
         	background-color: #FFF;
         }
-        .contact-nav li i {
+        .navbar-nav li i {
         	color:#f36700;
         }
+  /* header navbar*/
+
+/* footer */
+.context-dark, .bg-gray-dark, .bg-primary {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-classic a, .footer-classic a:focus, .footer-classic a:active {
+    color: #ffffff;
+}
+.nav-list li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.nav-list li a:hover:before {
+    margin-left: 0;
+    opacity: 1;
+    visibility: visible;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 23px;
+    font: 900 13px/1 "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+}
+.social-container .col {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.nav-list li a:before {
+    content: "\f14f";
+    font: 400 21px/1 "Material Design Icons";
+    color: #4d6de6;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-left: -28px;
+    margin-right: 7px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .22s ease;
+}
+/* footer */
   </style>
 </head>
 
@@ -54,14 +109,14 @@
                   <li><a href="{% url 'home:home' %}#about-us">About</a></li>
                   <li><a href="{% url 'menu:menu' %}">Menu</a></li>
                   <li><a href="#order">Order</a></li>
-                  <li><a href="{% url 'booktable:booktable' %}">Reservation</a></li>
+                  <li><a href="{% url 'book_a_table:book' %}">Reservation</a></li>
                   <!--<li><a href="#gallery">Gallery</a></li>-->
                   <li><a href="{% url 'event:event' %}">Events</a></li>
                   <li><a href="#">Contact</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><i class="fa fa-phone"></i> 045-548-14-97</a></li>
-                <li><a href="#"><i class="fa fa-map-marker"></i> 3685 Granville Lane</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i> 91-7568543012</a></li>
+                <li><a href="#"><i class="fa fa-map-marker"></i> Gandhinagar sector 16</a></li>
               </ul>
             </div>
           </div>
@@ -74,48 +129,56 @@
 
 <br>
 
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <div class="block">
+      <div class="footer section  footer-classic context-dark" style="background: #2d3246;">
+          <div class="container">
+              <div class="row row-30">
+                  <div class="col-sm-4 col-xl-5">
+                      <div class="pr-xl-4">
+                        <p style="margin-top: 10px;">TheTable Restaurant is a place for simplicity. Good food, good beer, and good service.</p>
 
-                    <ul class="address-block">
-                        <li> Home </li>
-                        <li> about us</li>
-                        <li>menus</li>
-                    </ul>
+                        <p class="rights"><span>©  </span><span class="copyright-year">2018</span><span></span><span>TheTable Restarurant.</span></p>
+                      </div>
+                      <i style="font-size:24px" class="fa"><a href="#">&#xf09a;</a></i> &nbsp; &nbsp; &nbsp;
+                      <i style="font-size:24px" class="fa"><a href="#">&#xf16d;</a></i> &nbsp; &nbsp; &nbsp;
+                      <i style="font-size:24px" class="fa"><a href="#">&#xf099;</a></i> &nbsp; &nbsp; &nbsp;
+                      <i style="font-size:24px" class="fa"><a href="#">&#xf1a0;</a></i>
+                  </div>
+                  <div class="col-sm-4">
+                     <div style="margin-left: 100px; ">
+                          <h4>Contacts</h4>
+                          <dl class="contact-list">
+                            <dt>Address:</dt>
+                            <dd>1st Floor Near Gandhinagar Nagrik Bank GH-4II, Sector-16, Gandhinagar</dd>
+                          </dl>
+                          <dl class="contact-list">
+                            <dt>email:</dt>
+                            <dd><a href="mailto:#">thetableresto@gmail.com</a></dd>
+                          </dl>
+
+                          <dl class="contact-list">
+                            <dt>phones:</dt>
+                            <dd><a href="tel:#">+91 7568543012</a> <span>or</span> <a href="tel:#">+91 9571195353</a>
+                            </dd>
+                          </dl>
+                       </div>
+                  </div>
+                  <div class="col-sm-4" >
+                     <div style="margin-left: 100px; ">
+                        <h5>Links</h5>
+                        <ul class="nav-list">
+                          <li ><a href="{% url 'home:home' %}">Home</a></li>
+                          <li><a href="{% url 'home:home' %}#about-us">About</a></li>
+                          <li><a href="{% url 'menu:menu' %}">Menu</a></li>
+                          <li><a href="#order">Order</a></li>
+                          <li><a href="{% url 'booktable:booktable' %}">Reservation</a></li>
+                          <!--<li><a href="#gallery">Gallery</a></li>-->
+                          <li><a href="{% url 'event:event' %}">Events</a></li>
+
+                        </ul>
+                      </div>
+                  </div>
                 </div>
             </div>
-            <div class="col-sm-4">
-                <div class="block">
-
-                    <ul class="address-block">
-                        <li>Order</li>
-                        <li>Reservation</li>
-                        <li>Events</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-sm-4">
-                <div class="block">
-                    <ul class="address-block">
-                        <li>
-                            <i class="fa fa-map-marker"></i>1st Floor Near Gandhinagar Nagrik Bank GH-4II, Sector-16, Gandhinagar
-                        </li>
-                        <li>
-                            <i class="fa fa-envelope-o"></i>thetablerestaurant123@gmail.com
-                        </li>
-                        <li>
-                            <i class="fa fa-phone"></i>079-23223440,&nbsp;+919662663440
-                        </li>
-                    </ul>
-                </div>
-           </div>
-        </div>
-    </div>
-</div>
-
-
-</body>
+       </div>
+    </body>
 </html>
