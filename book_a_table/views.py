@@ -52,7 +52,7 @@ def book_table(request):
                                      reply_to=[email_send, ])
                 email.send()
                 print('reached')
-                return HttpResponseRedirect(reverse('menu:menu'))
+                return render(request,'book_a_table/order_confirmation.html')
         else:
             print(book_form.errors)
             return redirect('home/home.html')

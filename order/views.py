@@ -136,7 +136,7 @@ def mail_order(request, pk):
                          "Received mail from " + str(
                              email_send) + "\n\n" + "name: " +
                          str(name) + "\n" + "contact: " + str(number),
-                         to=['jainpratiti@gmail.com', ])
+                         to=['mahisaniyapayal@gmail.com', ])
     email.send()
 
     email = EmailMessage('Regarding Home Delivery',
@@ -147,8 +147,7 @@ def mail_order(request, pk):
                                                "for order "
                                                "\n" +
                          "We will contact you shortly on " + str(number),
-                         to=[email_send,
-                             'jainpratiti@gmail.com'],
+                         to=[email_send,],
                          reply_to=[email_send, ])
     email.send()
-    return HttpResponse("Reached!")
+    return render(request, 'order/pickup_confirmation.html')

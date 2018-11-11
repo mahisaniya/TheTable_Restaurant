@@ -30,7 +30,7 @@ ALLOWED_HOSTS = []
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = "mahisaniyapayal@gmail.com"
-EMAIL_HOST_PASSWORD = 'payal$kamla'
+EMAIL_HOST_PASSWORD = 'payal$$kamla'
 EMAIL_PORT = 587
 # Application definition
 
@@ -42,11 +42,10 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'menu.apps.MenuConfig',
-    'booktable.apps.BooktableConfig',
     'event.apps.EventConfig',
     'home.apps.HomeConfig',
     'book_a_table.apps.BookATableConfig',
-    # 'order.apps.OrderConfig',
+    'order.apps.OrderConfig',
 
 
 )
