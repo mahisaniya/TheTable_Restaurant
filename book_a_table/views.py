@@ -22,37 +22,37 @@ def book_table(request):
             time = book_form.cleaned_data['time']
             table.save()
 
-            value = validate_email(email_send, verify=True)
-            print(value)
-            if value is None:
-                return HttpResponse("invalid mail")
-            else:
-                email = EmailMessage('Regarding Booking a Table',
-                                     "Recieved mail from " + str(
-                                         email_send) + "\n\n" + "name: " +
-                                     str(customer) + "\n" + "contact: " +
-                                     str(contact) + "\npersons: " +
-                                     str(total_persons) + "\n" +
-                                     "date and time: " + str(
-                                         date) + "  " + str(time),
-                                     to=['mahisaniyapayal@gmail.com', ])
-                email.send()
+            # value = validate_email(email_send, verify=True)
+            # print(value)
+            # if value is None:
+            #     return HttpResponse("invalid mail")
+            # else:
+            email = EmailMessage('Regarding Booking a Table',
+                                 "Recieved mail from " + str(
+                                     email_send) + "\n\n" + "name: " +
+                                 str(customer) + "\n" + "contact: " +
+                                 str(contact) + "\npersons: " +
+                                 str(total_persons) + "\n" +
+                                 "date and time: " + str(
+                                     date) + "  " + str(time),
+                                 to=['mahisaniyapayal@gmail.com', ])
+            email.send()
 
-                email = EmailMessage('Regarding Booking a Table',
-                                     "Hey " + str(
-                                         customer) + ",\n\n" + "We have "
-                                                               "recieved "
-                                                               "your request "
-                                                               "for book a "
-                                                               "table\n" +
-                                     "We will contact you shortly on " +
-                                     str(contact),
-                                     to=[email_send,
-                                         'mahisaniyapayal@gmail.com'],
-                                     reply_to=[email_send, ])
-                email.send()
-                print('reached')
-                return render(request,'book_a_table/order_confirmation.html')
+            email = EmailMessage('Regarding Booking a Table',
+                                 "Hey " + str(
+                                     customer) + ",\n\n" + "We have "
+                                                           "recieved "
+                                                           "your request "
+                                                           "for book a "
+                                                           "table\n" +
+                                 "We will contact you shortly on " +
+                                 str(contact),
+                                 to=[email_send,
+                                     'mahisaniyapayal@gmail.com'],
+                                 reply_to=[email_send, ])
+            email.send()
+            print('reached')
+            return render(request,'book_a_table/order_confirmation.html')
         else:
             print(book_form.errors)
             return redirect('home/home.html')
